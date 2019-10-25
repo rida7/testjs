@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="para">this is a paragraph</p>
+
+<button onClick="changeToName()">Click Me</button>
+<script>
+    function changeToName()
+    {
+        document.getElementById("para").innerHTML ="Rida Wajid";
+
+    }
+</script>
+
+
+
+<p> maximum number=</p>
+<p id="para2"></p>
+<button onclick="maximum()">max</button>
+<script>
+
+    var arr = [2, 5, 3, 8, 9];
+
+    function maximum() {
+        var max1;
+        for (var x = 0; x < arr.length-1; x++) {
+            if (arr[x] >= arr[x + 1]) {
+                max1 = arr[x];
+            }
+            else
+                max1 = arr[x + 1];
+        }
+//            window.alert(max1);
+        document.getElementById("para2").innerHTML = max1;
+
+    }
+
+    //        document.getElementById("para2").innerHTML = max1;
+
+</script>
+
+</body>
+</html>
